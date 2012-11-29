@@ -57,4 +57,17 @@
     return self;
 }
 							
+- (IBAction)shouldShowBanner:(UIButton *)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+        [_verticalSpacingOfBanner setConstant:0];
+        [self.view layoutSubviews];
+    }];
+}
+
+- (IBAction)shouldHideBanner:(UIButton *)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+        [_verticalSpacingOfBanner setConstant:40];
+        [self.view layoutSubviews];
+    }];
+}
 @end
