@@ -12,25 +12,19 @@
 
 @end
 
-@implementation DetailViewController
+@implementation DetailViewController{
 
-#pragma mark - Managing the detail item
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Detail", @"Detail");
+        self.title = NSLocalizedString(@"Clapmera", @"Detail");
     }
     return self;
 }
-							
+
 - (IBAction)shouldShowBanner:(UIButton *)sender {
     [UIView animateWithDuration:0.3 animations:^{
         [_verticalSpacingOfBanner setConstant:0];

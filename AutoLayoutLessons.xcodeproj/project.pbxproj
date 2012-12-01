@@ -20,6 +20,9 @@
 		062E8E1B16675D4C00C202A7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 062E8E1A16675D4C00C202A7 /* DetailViewController.m */; };
 		062E8E1E16675D4C00C202A7 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062E8E1C16675D4C00C202A7 /* MasterViewController.xib */; };
 		062E8E2116675D4C00C202A7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062E8E1F16675D4C00C202A7 /* DetailViewController.xib */; };
+		068E0BF8166A0D7C00E89A72 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E0BF7166A0D7C00E89A72 /* iAd.framework */; };
+		068E0C4C166A271900E89A72 /* ClapmeraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068E0C4A166A271900E89A72 /* ClapmeraViewController.m */; };
+		068E0C50166A275800E89A72 /* ClapmeraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068E0C4E166A275800E89A72 /* ClapmeraViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,10 @@
 		062E8E1A16675D4C00C202A7 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		062E8E1D16675D4C00C202A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		062E8E2016675D4C00C202A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		068E0BF7166A0D7C00E89A72 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		068E0C49166A271900E89A72 /* ClapmeraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClapmeraViewController.h; sourceTree = "<group>"; };
+		068E0C4A166A271900E89A72 /* ClapmeraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClapmeraViewController.m; sourceTree = "<group>"; };
+		068E0C4F166A275800E89A72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ClapmeraViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068E0BF8166A0D7C00E89A72 /* iAd.framework in Frameworks */,
 				062E8DFF16675D4C00C202A7 /* UIKit.framework in Frameworks */,
 				062E8E0116675D4C00C202A7 /* Foundation.framework in Frameworks */,
 				062E8E0316675D4C00C202A7 /* CoreGraphics.framework in Frameworks */,
@@ -61,6 +69,7 @@
 		062E8DEF16675D4C00C202A7 = {
 			isa = PBXGroup;
 			children = (
+				068E0BF7166A0D7C00E89A72 /* iAd.framework */,
 				062E8E0416675D4C00C202A7 /* AutoLayoutLessons */,
 				062E8DFD16675D4C00C202A7 /* Frameworks */,
 				062E8DFB16675D4C00C202A7 /* Products */,
@@ -92,10 +101,13 @@
 				062E8E0E16675D4C00C202A7 /* AppDelegate.m */,
 				062E8E1616675D4C00C202A7 /* MasterViewController.h */,
 				062E8E1716675D4C00C202A7 /* MasterViewController.m */,
+				062E8E1C16675D4C00C202A7 /* MasterViewController.xib */,
 				062E8E1916675D4C00C202A7 /* DetailViewController.h */,
 				062E8E1A16675D4C00C202A7 /* DetailViewController.m */,
-				062E8E1C16675D4C00C202A7 /* MasterViewController.xib */,
 				062E8E1F16675D4C00C202A7 /* DetailViewController.xib */,
+				068E0C49166A271900E89A72 /* ClapmeraViewController.h */,
+				068E0C4A166A271900E89A72 /* ClapmeraViewController.m */,
+				068E0C4E166A275800E89A72 /* ClapmeraViewController.xib */,
 				062E8E0516675D4C00C202A7 /* Supporting Files */,
 			);
 			path = AutoLayoutLessons;
@@ -172,6 +184,7 @@
 				062E8E1516675D4C00C202A7 /* Default-568h@2x.png in Resources */,
 				062E8E1E16675D4C00C202A7 /* MasterViewController.xib in Resources */,
 				062E8E2116675D4C00C202A7 /* DetailViewController.xib in Resources */,
+				068E0C50166A275800E89A72 /* ClapmeraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +199,7 @@
 				062E8E0F16675D4C00C202A7 /* AppDelegate.m in Sources */,
 				062E8E1816675D4C00C202A7 /* MasterViewController.m in Sources */,
 				062E8E1B16675D4C00C202A7 /* DetailViewController.m in Sources */,
+				068E0C4C166A271900E89A72 /* ClapmeraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +228,14 @@
 				062E8E2016675D4C00C202A7 /* en */,
 			);
 			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		068E0C4E166A275800E89A72 /* ClapmeraViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068E0C4F166A275800E89A72 /* en */,
+			);
+			name = ClapmeraViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,11 +294,13 @@
 		062E8E2516675D4C00C202A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayoutLessons/AutoLayoutLessons-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayoutLessons/AutoLayoutLessons-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -285,11 +309,13 @@
 		062E8E2616675D4C00C202A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayoutLessons/AutoLayoutLessons-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayoutLessons/AutoLayoutLessons-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

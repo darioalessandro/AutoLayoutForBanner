@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import "ClapmeraViewController.h"
 
 #import "DetailViewController.h"
 
@@ -29,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _objects=@[@"Clapmera"];
+    _objects=@[@"Clapmera", @"ShowHideManually"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,10 +92,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!self.detailViewController) {
-        self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    if(indexPath.row==0){
+        ClapmeraViewController * clapmeraViewController= [ClapmeraViewController new];
+        [self.navigationController pushViewController:clapmeraViewController animated:TRUE];
+    }else{
+        if (!self.detailViewController) {
+            self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+        }
+        [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
+
 }
 
 @end

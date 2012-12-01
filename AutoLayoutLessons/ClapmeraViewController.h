@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface DetailViewController : UIViewController 
+@interface ClapmeraViewController : UIViewController <ADBannerViewDelegate>
 
 - (IBAction)shouldShowBanner:(UIButton *)sender;
 - (IBAction)shouldHideBanner:(UIButton *)sender;
