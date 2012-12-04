@@ -16,15 +16,6 @@
     ADBannerView *_iAdsBanner;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.title = NSLocalizedString(@"Clapmera", @"Detail");
-    }
-    return self;
-}
-
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self setupiAdNetwork];
@@ -42,7 +33,11 @@
     _iAdsBanner.delegate = self;
     [_iAdsBanner setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.bannerView addSubview:_iAdsBanner];
-    
+    [self.bannerView addConstraints:[self iAdsLayoutConstrains]];
+    [self layoutBanners];
+}
+
+-(NSArray *)iAdsLayoutConstrains{
     NSLayoutConstraint * leading=[NSLayoutConstraint constraintWithItem:_iAdsBanner attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.bannerView attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
     
     NSLayoutConstraint * top=[NSLayoutConstraint constraintWithItem:_iAdsBanner attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.bannerView attribute:NSLayoutAttributeTop multiplier:1 constant:0];
@@ -50,9 +45,7 @@
     NSLayoutConstraint * width=[NSLayoutConstraint constraintWithItem:_iAdsBanner attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.bannerView attribute:NSLayoutAttributeWidth multiplier:1 constant:0];
     
     NSLayoutConstraint * height=[NSLayoutConstraint constraintWithItem:_iAdsBanner attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.bannerView attribute:NSLayoutAttributeHeight multiplier:1 constant:0];
-    
-    [self.bannerView addConstraints:@[top, width, height, leading]];
-    [self layoutBanners];
+    return @[top, width, height, leading];
 }
 
 #pragma mark iADs delegate
@@ -86,7 +79,7 @@
     }
 }
 
-- (IBAction)shouldShowBanner:(UIButton *)sender {
+- (void)shouldShowBanner:(UIButton *)sender {
     [UIView animateWithDuration:0.3 animations:^{
         [self.bannerHeight setConstant:(_iAdsBanner.bannerLoaded)?_iAdsBanner.frame.size.height:40];
         [_verticalSpacingOfBanner setConstant:0];
@@ -94,11 +87,12 @@
     }];
 }
 
-- (IBAction)shouldHideBanner:(UIButton *)sender {
+- (void)shouldHideBanner:(UIButton *)sender {
     [UIView animateWithDuration:0.3 animations:^{
         [self.bannerHeight setConstant:(_iAdsBanner.bannerLoaded)?_iAdsBanner.frame.size.height:40];
         [_verticalSpacingOfBanner setConstant:(_iAdsBanner.bannerLoaded)?_iAdsBanner.frame.size.height:40];
         [self.view layoutSubviews];
     }];
 }
+
 @end

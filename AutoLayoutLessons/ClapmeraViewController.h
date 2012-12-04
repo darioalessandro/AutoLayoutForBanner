@@ -11,8 +11,6 @@
 
 @interface ClapmeraViewController : UIViewController <ADBannerViewDelegate>
 
-- (IBAction)shouldShowBanner:(UIButton *)sender;
-- (IBAction)shouldHideBanner:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *verticalSpacingOfBanner;
 @property (weak, nonatomic) IBOutlet UIView *bannerView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bannerHeight;

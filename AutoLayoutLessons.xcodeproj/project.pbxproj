@@ -23,6 +23,8 @@
 		068E0BF8166A0D7C00E89A72 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E0BF7166A0D7C00E89A72 /* iAd.framework */; };
 		068E0C4C166A271900E89A72 /* ClapmeraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068E0C4A166A271900E89A72 /* ClapmeraViewController.m */; };
 		068E0C50166A275800E89A72 /* ClapmeraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068E0C4E166A275800E89A72 /* ClapmeraViewController.xib */; };
+		06B6DD2C166DED0D002473BC /* HorizontalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DD2B166DED0D002473BC /* HorizontalTableViewController.m */; };
+		06B6DD38166DF766002473BC /* chevrolet_volt06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06B6DD37166DF766002473BC /* chevrolet_volt06.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,9 @@
 		068E0C49166A271900E89A72 /* ClapmeraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClapmeraViewController.h; sourceTree = "<group>"; };
 		068E0C4A166A271900E89A72 /* ClapmeraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClapmeraViewController.m; sourceTree = "<group>"; };
 		068E0C4F166A275800E89A72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ClapmeraViewController.xib; sourceTree = "<group>"; };
+		06B6DD2A166DED0D002473BC /* HorizontalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalTableViewController.h; sourceTree = "<group>"; };
+		06B6DD2B166DED0D002473BC /* HorizontalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalTableViewController.m; sourceTree = "<group>"; };
+		06B6DD37166DF766002473BC /* chevrolet_volt06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chevrolet_volt06.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,8 @@
 				068E0C49166A271900E89A72 /* ClapmeraViewController.h */,
 				068E0C4A166A271900E89A72 /* ClapmeraViewController.m */,
 				068E0C4E166A275800E89A72 /* ClapmeraViewController.xib */,
+				06B6DD2A166DED0D002473BC /* HorizontalTableViewController.h */,
+				06B6DD2B166DED0D002473BC /* HorizontalTableViewController.m */,
 				062E8E0516675D4C00C202A7 /* Supporting Files */,
 			);
 			path = AutoLayoutLessons;
@@ -116,6 +123,7 @@
 		062E8E0516675D4C00C202A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				06B6DD37166DF766002473BC /* chevrolet_volt06.jpg */,
 				062E8E0616675D4C00C202A7 /* AutoLayoutLessons-Info.plist */,
 				062E8E0716675D4C00C202A7 /* InfoPlist.strings */,
 				062E8E0A16675D4C00C202A7 /* main.m */,
@@ -185,6 +193,7 @@
 				062E8E1E16675D4C00C202A7 /* MasterViewController.xib in Resources */,
 				062E8E2116675D4C00C202A7 /* DetailViewController.xib in Resources */,
 				068E0C50166A275800E89A72 /* ClapmeraViewController.xib in Resources */,
+				06B6DD38166DF766002473BC /* chevrolet_volt06.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +209,7 @@
 				062E8E1816675D4C00C202A7 /* MasterViewController.m in Sources */,
 				062E8E1B16675D4C00C202A7 /* DetailViewController.m in Sources */,
 				068E0C4C166A271900E89A72 /* ClapmeraViewController.m in Sources */,
+				06B6DD2C166DED0D002473BC /* HorizontalTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import "MasterViewController.h"
 #import "ClapmeraViewController.h"
-
+#import "HorizontalTableViewController.h"
 #import "DetailViewController.h"
 
 @interface MasterViewController () {
@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _objects=@[@"Clapmera", @"ShowHideManually"];
+    _objects=@[@"Clapmera", @"ShowHideManually", @"Gallery"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -95,11 +95,14 @@
     if(indexPath.row==0){
         ClapmeraViewController * clapmeraViewController= [ClapmeraViewController new];
         [self.navigationController pushViewController:clapmeraViewController animated:TRUE];
-    }else{
+    }else if(indexPath.row==1){
         if (!self.detailViewController) {
             self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
         }
         [self.navigationController pushViewController:self.detailViewController animated:YES];
+    }else if(indexPath.row==2){
+        HorizontalTableViewController * horizontalTableViewController= [HorizontalTableViewController new];
+        [self.navigationController pushViewController:horizontalTableViewController animated:TRUE];
     }
 
 }
