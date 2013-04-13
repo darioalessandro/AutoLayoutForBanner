@@ -10,6 +10,7 @@
 #import "ClapmeraViewController.h"
 #import "HorizontalTableViewController.h"
 #import "DetailViewController.h"
+#import "TwoButtonsViewController.h"
 
 @interface MasterViewController () {
     NSArray *_objects;
@@ -30,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _objects=@[@"Clapmera", @"ShowHideManually", @"Gallery"];
+    _objects=@[@"Clapmera", @"ShowHideManually", @"Gallery", @"TwoButtons"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -103,6 +104,9 @@
     }else if(indexPath.row==2){
         HorizontalTableViewController * horizontalTableViewController= [HorizontalTableViewController new];
         [self.navigationController pushViewController:horizontalTableViewController animated:TRUE];
+    }else if(indexPath.row==3){
+        TwoButtonsViewController * twoButtons=[TwoButtonsViewController new];
+        [self.navigationController pushViewController:twoButtons animated:TRUE];
     }
 
 }

@@ -25,6 +25,8 @@
 		068E0C50166A275800E89A72 /* ClapmeraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068E0C4E166A275800E89A72 /* ClapmeraViewController.xib */; };
 		06B6DD2C166DED0D002473BC /* HorizontalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DD2B166DED0D002473BC /* HorizontalTableViewController.m */; };
 		06B6DD38166DF766002473BC /* chevrolet_volt06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06B6DD37166DF766002473BC /* chevrolet_volt06.jpg */; };
+		06C4987B1719E4B7004BF035 /* TwoButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C498791719E4B7004BF035 /* TwoButtonsViewController.m */; };
+		06C4987C1719E4B7004BF035 /* TwoButtonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C4987A1719E4B7004BF035 /* TwoButtonsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,9 @@
 		06B6DD2A166DED0D002473BC /* HorizontalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalTableViewController.h; sourceTree = "<group>"; };
 		06B6DD2B166DED0D002473BC /* HorizontalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalTableViewController.m; sourceTree = "<group>"; };
 		06B6DD37166DF766002473BC /* chevrolet_volt06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chevrolet_volt06.jpg; sourceTree = "<group>"; };
+		06C498781719E4B7004BF035 /* TwoButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoButtonsViewController.h; sourceTree = "<group>"; };
+		06C498791719E4B7004BF035 /* TwoButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoButtonsViewController.m; sourceTree = "<group>"; };
+		06C4987A1719E4B7004BF035 /* TwoButtonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoButtonsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,9 @@
 				068E0C4E166A275800E89A72 /* ClapmeraViewController.xib */,
 				06B6DD2A166DED0D002473BC /* HorizontalTableViewController.h */,
 				06B6DD2B166DED0D002473BC /* HorizontalTableViewController.m */,
+				06C498781719E4B7004BF035 /* TwoButtonsViewController.h */,
+				06C498791719E4B7004BF035 /* TwoButtonsViewController.m */,
+				06C4987A1719E4B7004BF035 /* TwoButtonsViewController.xib */,
 				062E8E0516675D4C00C202A7 /* Supporting Files */,
 			);
 			path = AutoLayoutLessons;
@@ -194,6 +202,7 @@
 				062E8E2116675D4C00C202A7 /* DetailViewController.xib in Resources */,
 				068E0C50166A275800E89A72 /* ClapmeraViewController.xib in Resources */,
 				06B6DD38166DF766002473BC /* chevrolet_volt06.jpg in Resources */,
+				06C4987C1719E4B7004BF035 /* TwoButtonsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +219,7 @@
 				062E8E1B16675D4C00C202A7 /* DetailViewController.m in Sources */,
 				068E0C4C166A271900E89A72 /* ClapmeraViewController.m in Sources */,
 				06B6DD2C166DED0D002473BC /* HorizontalTableViewController.m in Sources */,
+				06C4987B1719E4B7004BF035 /* TwoButtonsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
